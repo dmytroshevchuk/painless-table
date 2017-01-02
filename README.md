@@ -2,7 +2,9 @@
 
 ## USAGE
 
-```
+```ruby
+require 'painless-table'
+
 table = Painless::Table.new(
   heading: [:id, :title, :created_at],
   objects: [
@@ -13,5 +15,11 @@ table = Painless::Table.new(
 )
 
 puts table
-
+# -----------------------------------------------------------
+# |  Id  |        Title         |        Created at         |
+# -----------------------------------------------------------
+# | 10   | First painless title | 2017-01-03 00:47:08 +0200 |
+# | 9    | Great article        | 2017-01-03 00:47:08 +0200 |
+# | 1089 | Last post            | 2017-01-03 00:47:08 +0200 |
+# -----------------------------------------------------------
 ```
