@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name        = 'painless-table'
-  s.version     = '0.0.1'
+  s.version     = '0.1.0'
   s.date        = '2017-01-02'
   s.summary     = "Painless Table for visualization of your data."
   s.description = "Library for data visualization in the terminal."
