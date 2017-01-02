@@ -8,6 +8,6 @@ Gem::Specification.new do |s|
   s.description = "Library for data visualization in the terminal."
   s.authors     = ["Dmytro Shevchuk"]
   # s.email       = 'dmytro@shevchuk.com'
-  s.require_paths = ["lib"]
+  s.files = Dir['lib/**/*.rb']
   s.license       = 'MIT'
 end
