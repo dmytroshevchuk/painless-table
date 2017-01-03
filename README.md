@@ -1,10 +1,29 @@
-# Painless Table: gem for visualisation data in terminal.
+# Painless Table
 
-## USAGE
+gem for visualisation data in terminal.
 
-```ruby
-require 'painless-table'
+## Installation
+Add this line to your Gemfile:
 
+` gem 'painless-table' `
+
+and then run:
+
+` bundle install `
+
+Also you can install gem with:
+
+` gem install painless-table `
+
+## Usage
+
+Load painless-table with string below and you can use it:
+
+` require 'painless-table' `
+
+## Examples
+
+```
 table = Painless::Table.new(
   heading: [:id, :title, :created_at],
   objects: [
@@ -14,12 +33,14 @@ table = Painless::Table.new(
   ]
 )
 
-puts table
-# -----------------------------------------------------------
-# |  Id  |        Title         |        Created at         |
-# -----------------------------------------------------------
-# | 10   | First painless title | 2017-01-03 00:47:08 +0200 |
-# | 9    | Great article        | 2017-01-03 00:47:08 +0200 |
-# | 1089 | Last post            | 2017-01-03 00:47:08 +0200 |
-# -----------------------------------------------------------
+> puts table
+
+ -----------------------------------------------------------
+ |  Id  |        Title         |        Created at         |
+ -----------------------------------------------------------
+ | 10   | First painless title | 2017-01-03 00:47:08 +0200 |
+ | 9    | Great article        | 2017-01-03 00:47:08 +0200 |
+ | 1089 | Last post            | 2017-01-03 00:47:08 +0200 |
+ -----------------------------------------------------------
+
 ```
